@@ -1,0 +1,47 @@
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: blue;
+  padding: 10px;
+}
+i {
+  font-size: xx-large;
+  margin: 10px;
+  color: white;
+}
+footer {
+  background-color: blue;
+  padding: 20px;
+  color: white;
+}
+aside{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 100vh;
+  background-color: silver;
+  border: 2px solid silver;
+}
+
+#corpo {
+  height: 78vh;
+}
+
+.logo-header img{
+  width: 200px;
+}
+.separador-header{
+  flex: 1;
+}
+.menu-header{
+  min-width: 60px;
+}
+.header-sidebar{
+  padding: 10px;
+  background-color: darkgray;
+  color: white;
+  height: 50px;
+}

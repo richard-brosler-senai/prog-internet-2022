@@ -11,6 +11,7 @@
       padding: 5px;
     }
   </style>
+  <link rel="stylesheet" href="assets/css/estilo.css">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
     <h1>Exemplo de uso de um formulário</h1>
   </header>
   <section id="sumario">
-    <h2>Indice de tags html</h2>
+    <h2 class="cor-vermelha">Indice de tags html</h2>
     <div style="display: flex; flex-direction: row;">
       <fieldset id="inputs">
         <legend>Tipos de Input</legend>
@@ -42,7 +43,7 @@
           <li><a href="#btnEnviar">submit</a></li>
           <li><a href="#telefone">tel</a></li>
           <li><a href="#nome">text</a></li>
-          <li><a href="#navegador">text com datalist</a></li>
+          <li><a href="#navegador">Datalist Comun</a></li>
           <li><a href="#hentrega">time</a></li>
           <li><a href="#pagina">url</a></li>
           <li><a href="#semana">week</a></li>
@@ -51,10 +52,35 @@
       <fieldset>
         <legend>Seletores</legend>
         <ul>
-          <li><a href="#">Select de uma linha</a></li>
-          <li><a href="#">Select de lista</a></li>
+          <li><a href="#seltime">Select de uma linha</a></li>
+          <li><a href="#seljogos">Select de lista</a></li>
         </ul>
       </fieldset>
+      <fieldset>
+        <legend>Datalists</legend>
+        <ul>
+          <li><a href="#inplegumes">DataList com Rótulos</a></li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Textarea</legend>
+        <ul>
+          <li><a href="#txtbio">Exemplo textarea</a></li>
+        </ul>
+      </fieldset>
+      <!--TODO 
+        - Fazer seletores
+          - Seleção de 1 item
+          - Seleção de Multiplos itens
+          - Seletores com mais de uma linha
+          - Desabilitando itens
+          - Desabilitando grupos
+        - Fazer datalists
+          - Datalist comum
+          - Datalist com label de valores
+        - Textearea
+        - Table
+      -->
     </div>
   </section>
 
@@ -131,7 +157,7 @@
       <!-- Endereço da pessoa-->
       <div>
         <label for="endereco">Endereço:</label>
-        <input type="text" name="endereco" id="endereco" size="50" required>
+        <input type="text" name="endereco" id="endereco" size="50" value="Rua das ruas" required>
       </div>
       <!-- Endereço do e-mail -->
       <div>
@@ -177,7 +203,7 @@
           <option value="10" label="10"></option>
         </datalist>
       </div>
-      <!-- Uso do datalist para um text -->
+      <!-- Uso do datalist para um text (sem rótulos)-->
       <div>
         <label for="navegador">Escolha seu navegador de preferência:</label>
         <input type="text" name="navegador" id="navegador" list="lstNavegador">
@@ -236,6 +262,64 @@
           width="80px" id="btnimage">
         <input type="image" src="assets/img/login-button-png-18020.png" alt="imagem login" width="80px">
       </div>
+      <!--Usando datalist com rótulos-->
+      <fieldset>
+        <legend>Uso de Datalist</legend>
+        <div>
+          <label for="inplegumes">Legumes:</label>
+          <input type="text" name="inplegumes" id="inplegumes" list="lstlegumes">
+          <datalist id="lstlegumes">
+            <option value="01">Brócolis</option>
+            <option value="02">Pimentão</option>
+            <option value="03">Batata</option>
+            <option value="04">Cenoura</option>
+          </datalist>
+        </div>
+      </fieldset>
+      <!--Seletores-->
+      <fieldset>
+        <legend>Seletores</legend>
+        <div>
+          <label for="seltime">Time do Coração:</label>
+          <select name="seltime" id="seltime">
+            <optgroup label="Times Paulistas">
+              <option value="01">Corithians</option>
+              <option value="02">São Paulo</option>
+              <option value="03">Palmeiras</option>
+              <option value="04" selected>Santos</option> <!-- Opção selecionada -->
+            </optgroup>
+            <optgroup label="Times Cariocas">
+              <option value="05">Fluminense</option>
+              <option value="06">Botafogo</option>
+              <option value="07">Flamengo</option>
+              <option value="08">Vasco da Gama</option>
+            </optgroup>
+          </select>
+        </div>
+        <div>
+          <label for="seljogos">Jogos Eletrônicos:</label>
+          <select name="seljogos" id="seljogos" multiple size="5">
+            <optgroup label="Aventura">
+              <option value="01">The Witcher 3</option>
+              <option value="02">Skyrin</option>
+            </optgroup>
+            <optgroup label="RPG">
+              <option value="03">Lendas</option>
+              <option value="04">Final Fantasy VII</option>
+            </optgroup>
+          </select>
+        </div>
+      </fieldset>
+      <!--Uso do textarea-->
+      <fieldset>
+        <legend>Usando o TextArea</legend>
+        <div>
+          <label for="txtbio">Biografia:</label>
+          <textarea name="txtbio" id="txtbio" cols="30" rows="10">
+            Aqui vai o texto (mesmo que value dos inputs)
+          </textarea>
+        </div>
+      </fieldset>
       <input type="submit" value="Enviar" id="btnEnviar">
       <input type="reset" value="Limpar" id="btnLimpar">
     </form>

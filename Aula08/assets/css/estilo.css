@@ -1,0 +1,10 @@
+.cor-vermelha{
+  color: red;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#cadastro{
+  background-color: aqua;
+}
+* {
+  color: black;
+}

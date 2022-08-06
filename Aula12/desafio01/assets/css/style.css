@@ -1,0 +1,61 @@
+
+/* 
+ * Reset de propriedades 
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+ * Elementos html 
+ */
+
+body { }
+
+/* 
+ * Primeiramente os IDs 
+ */
+#cabecalho { }
+
+#pesquisar { }
+
+#barra-esquerda { }
+
+#rodape { }
+
+#corpo { }
+
+/* 
+ * Classes 
+ */
+.btn-pesquisar { }
+
+.div-pesquisar { }
+
+.not-bell, .not-msg { }
+
+.not-msg { }
+
+.perf-quadro { }
+
+.perf-nome { }
+
+.perf-foto { }
+
+.logo-aside img { }
+
+.home-aside { }
+
+.nav-aside { }
+
+.menu { }
+
+.menu-item { }
+
+.menu-item a { }
+
+.div-direitos { }

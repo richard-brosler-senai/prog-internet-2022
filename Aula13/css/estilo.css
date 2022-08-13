@@ -1,0 +1,45 @@
+/* */
+header {
+  text-align: left;
+  width: 300px;
+  display: flex;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header h3 {
+  flex: 1;
+}
+.clOperacoes {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
+  gap: 2px;
+  width: 300px;
+  height: 200px;
+}
+.clOperacoes div {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px solid silver;
+  background-color: silver;
+  border-radius: 3px;
+  text-align: center;
+  padding-top: 8px;
+}
+.clDisplay {
+  width: 300px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: xx-large;
+  padding: 1px;
+}
+.clDisplay div {
+  display: flex;
+  text-align: right;
+  height: 100px;
+  background-color: blue;
+  color: white;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.clDisplay div h4 {
+  flex: 1;
+  margin-right: 10px;
+}

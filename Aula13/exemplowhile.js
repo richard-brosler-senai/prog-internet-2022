@@ -4,3 +4,4 @@ while (i<=10){
   i++;
 }
 const soma2 = (a,b) => console.log("aaaaa")
+

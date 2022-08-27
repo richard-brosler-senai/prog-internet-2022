@@ -13,8 +13,8 @@ console.log(btns);
 Array.from(btns).forEach(btn => {
   // console.log(btn);
   btn.addEventListener("click",()=>{
-    alert("Você clicou no btn " + btn.dataset.valor);
-    disp.innerHTML = btn.dataset.valor;
+    // alert("Você clicou no btn " + btn.dataset.valor);
+    disp.innerHTML += btn.dataset.valor;
   })
 });
 

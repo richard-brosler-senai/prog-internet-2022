@@ -26,9 +26,10 @@
   <script>
     const divs=document.querySelectorAll("div");
     divs.forEach(eln=>{
-      eln.addEventListener("click",()=>{
-        alert("Div " + eln.id + " foi clicado! Cor:" + 
-            eln.style.backgroundColor );
+      eln.addEventListener("click",(evt)=>{
+        console.log(evt)
+        alert("Div " + evt.srcElement.id + " foi clicado! Cor:" + 
+          window.getComputedStyle(evt.srcElement).backgroundColor );
       })
     })
   </script>

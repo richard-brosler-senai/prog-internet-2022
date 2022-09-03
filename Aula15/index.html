@@ -17,9 +17,14 @@
     <!-- Seção principal do formulário -->
     <section id="principal">
       <!-- Campo nome -->
-      <div class="clCampos">
-        <label for="nome">Nome<span class="clObrigatorio">*</span>:</label>
-        <input type="text" name="nome" id="nome" placeholder="Digite aqui seu nome">
+      <div>
+        <div class="clCampos">
+          <label for="nome">Nome<span class="clObrigatorio">*</span>:</label>
+          <input type="text" name="nome" id="nome" placeholder="Digite aqui seu nome">
+        </div>
+        <div class="msgErro" id="erroNome">
+          <p>Erro: Favor preencher o conteúdo!</p>
+        </div>
       </div>
       <!-- Campos CPF, Nascimento e Sexo -->
       <div class="cl3Colunas">
@@ -132,6 +137,8 @@
           <input type="reset" value="Cancelar">
         </div>
       </div>
+      <!-- Div para mostrar as mensagens de erros nos campos -->
+      <div class="msgErros"></div>
     </section>
   </form>
   <script src="assets/js/codigo.js"></script>
